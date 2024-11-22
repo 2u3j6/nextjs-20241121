@@ -1,5 +1,5 @@
 
 export default function page() {
-    return null
-  }
+  return null
   
+}
