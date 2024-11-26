@@ -5,7 +5,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 const adlam = ADLaM_Display({
 	subsets: ["latin"],
 	weight: ["400"],
-	variable: "--font-adlam",
+	variable: "--font-adlam", 
 });
 
 export default function RootLayout({
