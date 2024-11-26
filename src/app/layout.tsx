@@ -10,17 +10,15 @@ const adlam = ADLaM_Display({
 
 export default function RootLayout({
 	children,
-	modal,
+
 }: Readonly<{
 	children: React.ReactNode;
-	modal: React.ReactNode;
 }>) {
 	return (
 		<html>
 			<body className={adlam.className}>
 				<AntdRegistry>
 					{children}
-					{modal}
 				</AntdRegistry>
 			</body>
 		</html>
