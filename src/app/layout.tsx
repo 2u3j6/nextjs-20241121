@@ -5,12 +5,11 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 const adlam = ADLaM_Display({
 	subsets: ["latin"],
 	weight: ["400"],
-	variable: "--font-adlam", 
+	variable: "--font-adlam",
 });
 
 export default function RootLayout({
 	children,
-
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
@@ -18,7 +17,7 @@ export default function RootLayout({
 		<html>
 			<body className={adlam.className}>
 				<AntdRegistry>
-					{children}
+					<div className="container mx-auto px-12">{children}</div>
 				</AntdRegistry>
 			</body>
 		</html>
